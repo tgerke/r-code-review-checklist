@@ -65,6 +65,7 @@ Pitfalls
 - [ ] No redundant code blocks or comments
 - [ ] Extraneous data are not stored in the repository or loaded in the project
 - [ ] No assignment in function calls
+- [ ] `else` is used sparingly, if at all (i.e. for readability, it is avoided in favor of `if` with a guard clause or `case_when` when the logic is needed in a `mutate`)
 - [ ] No instances of `attach()` or `setwd()`
 - [ ] No reliance on a system-specific startup file, such as `.Rprofile`
 - [ ] No use of magrittr shortcuts `%<>%` and omission of `()` on functions that don’t have arguments
